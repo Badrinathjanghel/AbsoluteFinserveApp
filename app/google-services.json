@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "920058573815",
+    "project_id": "absolute-finserve",
+    "storage_bucket": "absolute-finserve.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920058573815:android:17fa0fb22742b81df174f2",
+        "android_client_info": {
+          "package_name": "com.absolute.bnj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "920058573815-6bhb0foj5o2abr75iutl3j3lhcbnuj01.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDs2etkVG390DrsPl6sYHS6D1eDPKDRFKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "920058573815-6bhb0foj5o2abr75iutl3j3lhcbnuj01.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

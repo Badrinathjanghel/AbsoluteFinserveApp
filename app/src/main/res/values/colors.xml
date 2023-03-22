@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="purple_200">#996EFF</color>
+    <color name="purple_500">#FF714EC3</color>
+    <color name="purple_700">#49337c</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bgcolor">#F4F4F4</color>
+
+    <color name="colorPrimary"> #FF714EC3 </color>
+    <color name="colorPrimaryDark"> #49337c </color>
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="intro_title_color">#000000</color>
+    <color name="intro_description_color">#656565</color>
+
+</resources>
+
+<!--<resources>-->
+<!--    <color name="purple_200">#C89241</color>-->
+<!--    <color name="purple_500">#BE7C1A</color>-->
+<!--    <color name="purple_700">#BE7C1A</color>-->
+<!--    <color name="teal_200">#FF03DAC5</color>-->
+<!--    <color name="teal_700">#FF018786</color>-->
+<!--    <color name="black">#FF000000</color>-->
+<!--    <color name="white">#FFFFFFFF</color>-->
+<!--    <color name="bgcolor">#F4F4F4</color>-->
+
+<!--    <color name="colorPrimary"> #C89241 </color>-->
+<!--    <color name="colorPrimaryDark"> #BE7C1A </color>-->
+<!--    <color name="tab_indicator_gray">#c0c0c0</color>-->
+<!--    <color name="intro_title_color">#000000</color>-->
+<!--    <color name="intro_description_color">#656565</color>-->
+
+<!--</resources>-->

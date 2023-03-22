@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/nointernet"
+        />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.absolute.bnj.MyWebView
+            android:id="@+id/myWebView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+<!--    <ImageView-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:src="@drawable/logo"-->
+
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        />-->
+
+
+
+<!--    <include layout="@layout/web_loading_screen"-->
+<!--        android:visibility="gone"-->
+<!--        />-->
+    <include layout="@layout/web_loading_shimmer_screen" />
+
+</RelativeLayout>
