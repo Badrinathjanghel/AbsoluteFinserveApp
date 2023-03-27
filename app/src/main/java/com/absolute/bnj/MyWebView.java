@@ -267,6 +267,24 @@ public class MyWebView extends WebView {
         Log.d(TAG, "Logout method called");
         session.logoutSession();
     }
+    @JavascriptInterface
+    public String getDeviceInfo(){
+        String device_info="";
+        String manufacturer = Build.MANUFACTURER;
+        String brand = Build.BRAND;
+        String model = Build.MODEL;
+
+        String device = "Android";
+        device += ","+ Build.VERSION.RELEASE;
+
+//        String brand = Build;
+        device_info = manufacturer+","+model+","+brand+","+device;
+        return device_info;
+    }
+    @JavascriptInterface
+    public String getAppVersion(){
+        return String.valueOf(BuildConfig.VERSION_CODE);
+    }
 
     public void loadMyURL(String url, SwipeRefreshLayout srl, RelativeLayout rtl){
 //        String postData = "token="+token+"&mobile="+mobile+"&userid="+userid;
