@@ -69,7 +69,6 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         session = new Session(getApplicationContext());
 
         Log.d(TAG, "sendNotification: Mbole: "+session.getMobile()+"\nU:"+session.getUserid()+"\nT:"+session.getJWTToken());
-        
 
         Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
