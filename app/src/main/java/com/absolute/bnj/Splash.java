@@ -39,6 +39,9 @@ public class Splash extends Activity {
         Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/poppins_regular.ttf");
         version.setTypeface(typeface);
 
+        TextView promo_text = findViewById(R.id.promo_text);
+        promo_text.setTypeface(typeface);
+
 
         FirebaseMessaging.getInstance().getToken().addOnCompleteListener(new OnCompleteListener<String>() {
             @Override
@@ -90,6 +93,6 @@ public class Splash extends Activity {
 
                 finish();
             }
-        }, 2000);
+        }, 1000);
     }
 }
