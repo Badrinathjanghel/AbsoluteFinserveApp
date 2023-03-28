@@ -29,6 +29,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
     private static final String TAG = "MyFirebaseMessingServic";
     String click_action="";
     Intent intent;
+    Session session;
     @Override
     public void onMessageReceived(@NonNull RemoteMessage remoteMessage) {
         super.onMessageReceived(remoteMessage);
@@ -64,6 +65,11 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
     private void sendNotification(String title,  String description, Bitmap image, String url, String msgid) {
         Log.d(TAG, "sendNotification: url: "+url);
+
+        session = new Session(getApplicationContext());
+
+        Log.d(TAG, "sendNotification: Mbole: "+session.getMobile()+"\nU:"+session.getUserid()+"\nT:"+session.getJWTToken());
+
         Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intent.putExtra("title", title);
