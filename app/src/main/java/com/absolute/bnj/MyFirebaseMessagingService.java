@@ -70,7 +70,19 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
         Log.d(TAG, "sendNotification: Mbole: "+session.getMobile()+"\nU:"+session.getUserid()+"\nT:"+session.getJWTToken());
 
-        Intent intent = new Intent(this, MainActivity.class);
+
+        Intent intent= new Intent(this, MainActivity.class);
+
+        //for testing recommendation page open
+        if(url!="") {
+            url += "?token=" + session.getJWTToken() + "&mobile=" + session.getMobile() + "&userid=" + session.getUserid();
+            intent = new Intent(this, WebviewActivity.class);
+        }else{
+//            new Intent(this, MainActivity.class);
+        }
+        Log.d(TAG, "sendNotification: URL:" + url);
+
+//        Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intent.putExtra("title", title);
         intent.putExtra("description", description);
