@@ -55,7 +55,8 @@ public class MyWebView extends WebView {
         getSettings().setDomStorageEnabled(true);
 
         getSettings().setPluginState(WebSettings.PluginState.ON);
-        getSettings().setAppCacheEnabled(true);
+//        getSettings().setAppCacheEnabled(true);
+        getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
 
         //load no cache will stop loading cache
         getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);

@@ -5,7 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.animation.Animator;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
@@ -22,6 +25,7 @@ public class Splash extends Activity {
     LottieAnimationView lottie_graph;
     String fbtoken;
     Session session;
+    Context ctx = this;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +42,15 @@ public class Splash extends Activity {
         TextView version = findViewById(R.id.version);
         Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/poppins_regular.ttf");
         version.setTypeface(typeface);
+
+        try {
+            PackageInfo pInfo = ctx.getPackageManager().getPackageInfo(ctx.getPackageName(), 0);
+            version.setText( "Version "+pInfo.versionName);
+        } catch (PackageManager.NameNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
+
 
         TextView promo_text = findViewById(R.id.promo_text);
         promo_text.setTypeface(typeface);
@@ -93,6 +106,6 @@ public class Splash extends Activity {
 
                 finish();
             }
-        }, 1000);
+        }, 2000);
     }
 }
