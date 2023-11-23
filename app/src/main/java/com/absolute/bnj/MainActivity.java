@@ -198,6 +198,7 @@ public class MainActivity extends Activity {
 
 
     //Check In-App Update API Google Play
+    // IMMediate Update, user has to update to use the application..
     private void checkForAppUpdate(){
         AppUpdateManager appUpdateManager = AppUpdateManagerFactory.create(context);
 
@@ -233,7 +234,6 @@ public class MainActivity extends Activity {
             }else{
                 Log.d(TAG, "onActivityResult: Update Success....");
             }
-
         }
     }
 }
