@@ -70,6 +70,9 @@ public class MainActivity extends Activity {
 //        Log.d(TAG, "initVars: testbnj");
 
         initVars();
+
+        //check for the app update available in play store...
+        checkForAppUpdate();
     }
 
     private void initVars() {
